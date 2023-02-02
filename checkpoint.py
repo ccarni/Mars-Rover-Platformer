@@ -8,9 +8,6 @@ class Checkpoint(Block):
 
     def collide_vertical(self, player, scroll=(0, 0)):
         player.spawn_pos = (self.x , self.y )
-        # print(self.x, self.y)
-        # print(self.x + scroll[0], self.y + scroll[1])
-        # print(self.x - scroll[0], self.y - scroll[1])
 
     def collide_horizontal(self, player, scroll=(0,0)):
         player.spawn_pos = (self.x , self.y)
